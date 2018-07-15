@@ -1,0 +1,7 @@
+<launch>
+
+  <node name="my_voice_nav" pkg="xf_voice_robot" type="two_voice_nav.py" output="screen">
+  <remap from="/cmd_vel" to="/cmd_vel_mux/input/teleop"/>
+  </node>
+
+</launch>
